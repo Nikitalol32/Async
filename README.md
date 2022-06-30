@@ -10,7 +10,6 @@ const
 ```
 
 ## Timeout
----
 
 ``` javascript
 async.setTimeout(() => {
@@ -19,7 +18,6 @@ async.setTimeout(() => {
 ```
 
 ## Promise
----
 
 ``` javascript
 async.promise(() => {
@@ -28,7 +26,6 @@ async.promise(() => {
 ```
 
 ## Interval
----
 
 ``` javascript
 async.setInterval(() => {
@@ -37,7 +34,6 @@ async.setInterval(() => {
 ```
 
 ## Группы и лейблы
----
 
 Группы и лейблы служат ключем для контроля операций. Когда вы назначете нескольким операциям одинаковые группу и лейбл, то операция с таким же ключом и группой будет удалена.
 
@@ -78,7 +74,6 @@ async.setTimeout(() => {
 ```
 
 ## Очистка
----
 
 ### Очистка Timeout
 
@@ -148,7 +143,6 @@ async.clearAll();
 ```
 
 ## Тестирование
----
 
 ### Timeout
 
