@@ -210,8 +210,6 @@ module.exports = class Async {
 			return;
 		}
 
-		console.log('not stopping')
-
 		if (giveAsyncOpts) {
 
 			if (label) {

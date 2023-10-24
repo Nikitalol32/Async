@@ -27,7 +27,7 @@ describe('Async setTimeout', () => {
 		expect(counter).toBe(1);
 	});
 
-	test.only('При вызове очистки группы которой нет не выкидывает ошибку', async () => {
+	test('При вызове очистки группы которой нет не выкидывает ошибку', async () => {
 		const async = new Async();
 
 		async.clearTimeout({group: 'd', label: 3});
