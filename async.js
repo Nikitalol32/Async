@@ -205,6 +205,13 @@ module.exports = class Async {
 			{group, label} = asyncOpts,
 			groups = mapByType[type];
 
+		// На случай, если группы еще не были созданы или переданы
+		if (!groups.get(group)) {
+			return;
+		}
+
+		console.log('not stopping')
+
 		if (giveAsyncOpts) {
 
 			if (label) {

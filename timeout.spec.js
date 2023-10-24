@@ -27,6 +27,12 @@ describe('Async setTimeout', () => {
 		expect(counter).toBe(1);
 	});
 
+	test.only('При вызове очистки группы которой нет не выкидывает ошибку', async () => {
+		const async = new Async();
+
+		async.clearTimeout({group: 'd', label: 3});
+	})
+
 	test('Вызывает функцию два раза при установки с разным лейблом', async () => {
 		const
 			async = new Async();
